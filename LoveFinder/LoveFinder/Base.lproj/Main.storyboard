@@ -108,17 +108,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
-                                    <action selector="okDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVj-aO-lLK"/>
+                                    <action selector="okDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVN-p2-uB9"/>
                                     <action selector="okDidTap:" destination="BYZ-38-t0r" eventType="touchDown" id="tmM-bQ-Ekd"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="填写完相关信息后点击确认" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jhT-ba-0Gj">
-                                <rect key="frame" x="21" y="592" width="332" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="170cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsa-HB-B73">
                                 <rect key="frame" x="294" y="398" width="65" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -126,6 +119,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fJ6-8I-S5r">
+                                <rect key="frame" x="21" y="579" width="332" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -136,7 +136,7 @@
                         <outlet property="height" destination="aR3-9O-vNB" id="BuL-Ca-K3B"/>
                         <outlet property="heightLabel" destination="bsa-HB-B73" id="Nfk-Wk-Vk4"/>
                         <outlet property="name" destination="O2J-TN-GVe" id="Gfh-N9-80g"/>
-                        <outlet property="okDidTap" destination="jhT-ba-0Gj" id="erR-ZI-R0u"/>
+                        <outlet property="result" destination="fJ6-8I-S5r" id="DU2-kB-d4g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

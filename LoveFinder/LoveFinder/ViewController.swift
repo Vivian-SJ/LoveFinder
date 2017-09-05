@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var haveHouse: UISwitch!
     
-    @IBOutlet weak var okDidTap: UITextView!
+    @IBOutlet weak var result: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,9 +41,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var i = Int(h)
         heightLabel.text = "\(i)cm"
     }
-
     
     @IBAction func okDidTap(_ sender: Any) {
+        let genderText = gender.selectedSegmentIndex == 0 ? "Boy" : "Girl"
+        let house = haveHouse.isOn ? "have house" : "no house"
+        result.text = "\(String(describing: name.text)), \(genderText), 生日\(birthday.date), 身高\(String(describing: heightLabel.text)), \(house)"
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
